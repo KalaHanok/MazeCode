@@ -3,17 +3,19 @@ import { useNavigate } from "react-router-dom";
 import { Graph } from "react-d3-graph";
 import "../Styles/ProblemPage.css";
 import data from "../data.json";
+import { color } from "d3";
+import axios from "axios";
 
 const graphConfig = {
   nodeHighlightBehavior: true,
   node: {
-    color: "lightgray",
+    color: "lightgrey",
     size: 4000,
-    highlightStrokeColor: "blue",
+    highlightStrokeColor: "#fff",
     directed: true,
   },
   link: {
-    highlightColor: "lightblue",
+    highlightColor: "#lightgrey",
   },
   d3: {
     gravity: -400,
@@ -22,6 +24,7 @@ const graphConfig = {
   directed: true,
   width: 900,
   height: 700,
+  color: "#fff",
 };
 
 const GraphComponent = () => {
@@ -32,6 +35,10 @@ const GraphComponent = () => {
   useEffect(() => {
     setGraphData(data);
   }, []);
+
+  const handleStart = async () => {
+    window.open(localStorage.getItem("link"));
+  };
 
   const handleClick = (nodeId) => {
     console.log(nodeId);
@@ -92,25 +99,19 @@ const GraphComponent = () => {
   }, [solvedNodes]);
 
   return (
-    <div>
+    <div className="container">
       <div className="button-container">
-        <button
-          onClick={() =>
-            window.open("https://www.hackerrank.com/auth/login", "_blank")
-          }
-        >
-          Start
-        </button>
+        <button onClick={handleStart}>Start</button>
       </div>
       <div className="graph-container">
         <Graph
-          id="graph-id" // id is mandatory
+          id="graph-id" // id is mandatorys
           data={graphData}
           config={graphConfig}
           onClickNode={handleClick}
         />
       </div>
-      <div className="button-container">
+      <div className="button-container" style={{ backgroundColor: "#0e0e0e" }}>
         <button onClick={() => navigate("/end")}>End</button>
       </div>
     </div>
