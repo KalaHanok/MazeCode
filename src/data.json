@@ -1,0 +1,122 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "x": 300,
+      "y": 50,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/7b2l7m9cf7g",
+      "dependencies": []
+    },
+    {
+      "id": 2,
+      "x": 200,
+      "y": 150,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/6f5bj81biah",
+      "dependencies": [1]
+    },
+    {
+      "id": 3,
+      "x": 300,
+      "y": 150,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/gkfh9asiq6g",
+      "dependencies": [1]
+    },
+    {
+      "id": 4,
+      "x": 400,
+      "y": 150,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/1qed391p5an",
+      "dependencies": [1]
+    },
+    {
+      "id": 5,
+      "x": 200,
+      "y": 250,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/1548lifa37q",
+      "dependencies": [2]
+    },
+    {
+      "id": 6,
+      "x": 300,
+      "y": 250,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/aqmslb6bkh4",
+      "dependencies": [3]
+    },
+    {
+      "id": 7,
+      "x": 400,
+      "y": 250,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/fqj6ki5dg2f",
+      "dependencies": [3, 1]
+    },
+    {
+      "id": 8,
+      "x": 500,
+      "y": 250,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/6ai6cfc9107",
+      "dependencies": [4]
+    },
+    {
+      "id": 9,
+      "x": 100,
+      "y": 350,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/2cm50ocapnk",
+      "dependencies": [5]
+    },
+    {
+      "id": 10,
+      "x": 400,
+      "y": 350,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/d5poajei4g6",
+      "dependencies": [7]
+    },
+    {
+      "id": 11,
+      "x": 200,
+      "y": 350,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/bc0640a2aec",
+      "dependencies": [9]
+    },
+    {
+      "id": 12,
+      "x": 500,
+      "y": 350,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/55ggadn3paj",
+      "dependencies": [8]
+    },
+    {
+      "id": 13,
+      "x": 200,
+      "y": 450,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/elhgighs99k",
+      "dependencies": [11]
+    },
+    {
+      "id": 14,
+      "x": 300,
+      "y": 550,
+      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/e07c6ptq22m",
+      "dependencies": [13, 6, 10, 12]
+    }
+  ],
+  "links": [
+    { "source": 1, "target": 2 },
+    { "source": 2, "target": 5 },
+    { "source": 5, "target": 9 },
+    { "source": 9, "target": 11 },
+    { "source": 11, "target": 13 },
+    { "source": 13, "target": 14 },
+    { "source": 1, "target": 3 },
+    { "source": 3, "target": 6 },
+    { "source": 6, "target": 14 },
+    { "source": 1, "target": 7 },
+    { "source": 7, "target": 10 },
+    { "source": 10, "target": 14 },
+    { "source": 1, "target": 4 },
+    { "source": 4, "target": 8 },
+    { "source": 8, "target": 12 },
+    { "source": 12, "target": 14 },
+    { "source": 6, "target": 9 },
+    { "source": 7, "target": 6 }
+  ]
+}
