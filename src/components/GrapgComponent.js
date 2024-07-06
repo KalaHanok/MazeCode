@@ -114,7 +114,7 @@ const GraphComponent = () => {
           onClickNode={handleClick}
         />
       </div>
-      <div className="button-container" style={{ backgroundColor: "#0e0e0e" }}>
+      <div className="button-container">
         <button onClick={() => navigate("/end")}>End</button>
       </div>
     </div>
