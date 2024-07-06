@@ -4,98 +4,98 @@
       "id": 1,
       "x": 300,
       "y": 50,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/7b2l7m9cf7g",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/power-of-2-27",
       "dependencies": []
     },
     {
       "id": 2,
       "x": 200,
       "y": 150,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/6f5bj81biah",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/square-root-of-a-number-8",
       "dependencies": [1]
     },
     {
       "id": 3,
       "x": 300,
       "y": 150,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/gkfh9asiq6g",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/climbing-stairs-27",
       "dependencies": [1]
     },
     {
       "id": 4,
       "x": 400,
       "y": 150,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/1qed391p5an",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/concatenation-of-arrays",
       "dependencies": [1]
     },
     {
       "id": 5,
       "x": 200,
       "y": 250,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/1548lifa37q",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/check-palindrome-28/problem",
       "dependencies": [2]
     },
     {
       "id": 6,
       "x": 300,
       "y": 250,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/aqmslb6bkh4",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/peak-index-in-mountain-array",
       "dependencies": [3]
     },
     {
       "id": 7,
       "x": 400,
       "y": 250,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/fqj6ki5dg2f",
-      "dependencies": [3, 1]
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/reverse-string-85",
+      "dependencies": [1]
     },
     {
       "id": 8,
       "x": 500,
       "y": 250,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/6ai6cfc9107",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/minimum-no-of-days-to-make-m-bouquets",
       "dependencies": [4]
     },
     {
       "id": 9,
       "x": 100,
       "y": 350,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/2cm50ocapnk",
-      "dependencies": [5]
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/longest-common-prefix-35",
+      "dependencies": [5, 6]
     },
     {
       "id": 10,
       "x": 400,
       "y": 350,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/d5poajei4g6",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/spiral-matrix-71-1",
       "dependencies": [7]
     },
     {
       "id": 11,
       "x": 200,
       "y": 350,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/bc0640a2aec",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/count-bits-2-1",
       "dependencies": [9]
     },
     {
       "id": 12,
       "x": 500,
       "y": 350,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/55ggadn3paj",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/search-in-a-2d-matrix-1",
       "dependencies": [8]
     },
     {
       "id": 13,
       "x": 200,
       "y": 450,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/elhgighs99k",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/minimum-time-to-complete-trips",
       "dependencies": [11]
     },
     {
       "id": 14,
       "x": 300,
       "y": 550,
-      "url": "https://www.hackerrank.com/test/61dpsq9b9ih/questions/e07c6ptq22m",
+      "url": "https://www.hackerrank.com/contests/mazecode-01/challenges/longest-palindromic-substring-1-3",
       "dependencies": [13, 6, 10, 12]
     }
   ],

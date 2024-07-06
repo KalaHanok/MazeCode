@@ -37,7 +37,8 @@ const GraphComponent = () => {
   }, []);
 
   const handleStart = async () => {
-    window.open(localStorage.getItem("link"));
+    // window.open(localStorage.getItem("link"));
+    window.open("https://www.hackerrank.com/contests/mazecode-01/challenges");
   };
 
   const handleClick = (nodeId) => {
@@ -64,15 +65,17 @@ const GraphComponent = () => {
     // Check if all dependencies are solved
     const allDependenciesSolved = (solvedNodes, dependencies) => {
       // Create a Set from solvedNodes for efficient lookup
-      const solvedNodesSet = new Set(solvedNodes);
-
-      // Check if every dependency is present in the solvedNodesSet
-      return dependencies.every((dependency) =>
-        solvedNodesSet.has(dependency.toString())
-      );
+      for (let i = 0; i < dependencies.length; i++) {
+        for (let j = 0; j < solvedNodes.length; j++) {
+          if (dependencies[i].toString() === solvedNodes[j]) {
+            return true;
+          }
+        }
+      }
+      return false;
     };
     console.log(allDependenciesSolved(solvedNodes, dependencies));
-    if (nodeId === 1 || allDependenciesSolved(solvedNodes, dependencies)) {
+    if (nodeId === "1" || allDependenciesSolved(solvedNodes, dependencies)) {
       setSolvedNodes((prevSolvedNodes) => [...prevSolvedNodes, nodeId]);
       console.log(solvedNodes);
       const url =
